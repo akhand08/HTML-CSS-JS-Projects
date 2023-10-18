@@ -1,0 +1,124 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: turquoise;
+}
+
+.main-body {
+    border: 1px solid black;
+    
+    border-radius: 8px;
+    background-color: azure;
+    padding-top: 0;
+    
+}
+
+.main-body .title-bar {
+    background-color: rgb(46, 114, 46);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 30%;
+    
+}
+
+.title-bar span {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+.main-body .form {
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form .form-item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.form-item input {
+    padding: 10px;
+    border-style: solid;
+}
+
+.form .btn {
+    background-color: rgb(46, 114, 46);
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 30%;
+
+
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+.btn input {
+    background-color: rgb(46, 114, 46);
+    border: 0;
+    color: white;
+    font-size: 20px;
+
+    
+
+}
+
+.form .forget-pass a {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+
+
+
+
+
+
+
+img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: turquoise;
+    color: white;
+    padding-top: 1px;
+    
+}
+
+.last-line {
+    padding: 0 0 2rem 2rem;
+
+}
+
+.last-line a {
+    text-decoration: none;
+    
+    
+}
