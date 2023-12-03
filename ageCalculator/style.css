@@ -1,0 +1,68 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color:gainsboro;
+    height: 100vh;
+    width: 100vw;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    border-radius: 5%;
+    border-bottom-right-radius: 30%;
+
+    padding: 40px;
+}
+
+input[type="number"] {
+
+    border: 1.5px solid black;
+    border-radius: 5%;
+    margin-right: 11px;
+    padding: 6px;
+    padding-left: 10px;
+
+    color: rgb(157, 202, 240);
+    font-weight: bolder;
+    font-size: x-large;
+
+    width: 110px;
+    height: 50px;
+    line-height: 50px;
+}
+
+input[type="number"]::placeholder {
+    color:rgb(157, 202, 240);
+    font-weight: bolder;
+    font-size: x-large;
+    position: relative;
+    
+}
+
+#day::after {
+    position:absolute;
+
+
+
+    height: 30px;
+    width: 50px;
+    content: "Day";
+    background-color: white ;
+    color: black;
+
+
+}
