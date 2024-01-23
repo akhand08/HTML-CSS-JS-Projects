@@ -28,6 +28,17 @@ body {
     padding: 40px;
 }
 
+
+
+
+.input {
+    position: relative;
+    padding: 20px;
+    /* border: 1px solid black; */
+
+    
+}
+
 input[type="number"] {
 
     border: 1.5px solid black;
@@ -43,26 +54,102 @@ input[type="number"] {
     width: 110px;
     height: 50px;
     line-height: 50px;
+
+    /* position: relative; */
 }
 
 input[type="number"]::placeholder {
     color:rgb(157, 202, 240);
     font-weight: bolder;
     font-size: x-large;
-    position: relative;
+    /* position: relative; */
     
 }
 
-#day::after {
+.after-content-day {
     position:absolute;
-
 
 
     height: 30px;
     width: 50px;
-    content: "Day";
-    background-color: white ;
+    /* background-color: white ; */
     color: black;
+    bottom: 68%;
+    left: 4.5%;
+}
 
 
+
+
+
+.after-content-month {
+    position:absolute;
+
+
+    height: 30px;
+    width: 50px;
+    /* background-color: white ; */
+    color: black;
+    bottom: 68%;
+
+    left: 34.5% ;
+
+
+}
+
+
+
+
+
+.after-content-year {
+    position:absolute;
+    height: 30px;
+    width: 50px;
+    /* background-color: white ; */
+    color: black;
+    bottom: 68%;
+    left: 64.5%;
+
+
+}
+
+
+
+button {
+    /* border: 2px solid black; */
+    margin-top: 10px;
+    position: absolute;
+    left: 70%;
+    background-color: white;
+    text-align: center;
+    border-radius: 50%;
+
+    padding: 10px;
+}
+button img {
+    height: 36px;
+    width: auto;
+    
+
+    
+}
+
+
+.result {
+
+    /* border: 2px solid black; */
+    margin-top: 55px;
+}
+
+.result h1 {
+    font-weight: bolder;
+    font-size: xx-large;
+    color: black;
+}
+
+.result h1 span {
+    font-weight: bolder;
+    font-size: xx-large;
+    color: rgb(157, 202, 240);
+    
 }
