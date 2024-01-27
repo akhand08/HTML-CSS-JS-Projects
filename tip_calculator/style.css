@@ -1,0 +1,237 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(207, 223, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 1vh;
+}
+
+
+.main .main-frame {
+    /* border: 2px solid black; */
+    width: 70%;
+    height: 50%;
+    margin: 2vh 2vh;
+
+    background-color: whitesmoke;
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    /* flex-wrap: wrap; */
+
+}
+
+
+.main .main-frame .calculation {
+    /* border: 1px solid black; */
+    height: 80%;
+    width: 46%;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+
+
+}
+
+.main-frame .calculation .bill-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    /* border: 1px solid black; */
+    position: relative;
+    
+}
+
+.bill h4 {
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 4%;
+    margin-bottom: 2%;
+}
+
+.bill-input::after {
+
+    content: "$";
+    position: absolute;
+    background-color: rgb(218, 236, 231);
+    color: rgb(116, 164, 150);
+    font-weight: bold;
+    left: 25px;
+    top: 13px;
+}
+
+.bill-input input {
+    width: 95%; 
+    padding: 1% 5% 1% 5%;
+    text-align: right;
+    font-size: 1.9vw;
+
+    background-color: rgb(218, 236, 231);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+
+
+
+.main-frame .calculation .tip {
+    margin-top: 4%;
+    
+}
+
+ .tip h4 {
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 4%;
+    margin-bottom: 2%;
+}
+
+
+.tip .button-container {
+    margin-left: 2.5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+   
+}
+
+.button-container  button {
+    width: 90%;
+    font-size: 40px;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    
+}
+
+.button-container input {
+    width: 90%;
+    font-size: 38px;
+    color: hsl(183, 100%, 15%);
+}
+
+.button-container input::placeholder {
+    color: hsl(183, 100%, 15%);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+.button-container #tip-percentage {
+
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+
+
+.main .main-frame .result {
+    border: 1px solid green;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    height: 80%;
+    width: 46%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+    body,html {
+        margin:0;
+    
+    }
+
+    .main {
+        height: 100%;
+    }
+
+    
+
+    .main .title {
+        height: 250px;
+        font-weight: 900;
+        font-size: 2vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    
+    }
+
+    .main .main-frame {
+        width: 100%;
+        height: calc(100% - 250px);
+        flex: 1;
+        /* overflow-y: auto; */
+        margin: 2vh 0;
+
+        flex-direction: column;
+        /* background-color: brown; */
+        
+    }
+    
+
+    .main .main-frame .calculation {
+        width: 100%;
+
+
+    }
+
+
+    .bill-input input {
+        width: 95%; 
+        padding: 1% 5% 1% 5%;
+        text-align: right;
+        font-size: 3.9vh;
+    
+        background-color: rgb(218, 236, 231);
+    }
+
+    .main .main-frame .result {
+        width: 100%;
+    }
+
+
+}
