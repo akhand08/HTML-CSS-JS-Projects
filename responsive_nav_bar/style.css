@@ -45,10 +45,16 @@ nav .ri-menu-line  {
     display: none;
 }
 
+
+.content {
+    background-color: coral;
+    width: 100%;
+    height: calc(100% - 100px);
+}
 @media (max-width: 600px) {
 
     nav {
-        background-color: rgb(224, 13, 13);
+        background-color:aqua;
     }
 
     nav .menus h4 {
@@ -62,6 +68,7 @@ nav .ri-menu-line  {
     nav .ri-menu-line {
         display: block;
         font-size: 5vw;
+        font-weight: 800;
         
     }
 
